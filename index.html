@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jebbar Asmaa - Présentation Personnelle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Lovable-style CSS */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #8c5bd0, #2f1e61, #cb819e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .lovable-hero {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      max-width: 480px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+    }
+
+    .lovable-hero h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .lovable-hero p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .lovable-button {
+      background-color: #f0f0f0;
+      color: #2f1e61;
+      font-weight: 600;
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(47, 30, 97, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+    }
+
+    .lovable-button:hover, .lovable-button:focus {
+      background-color: #c8a2f8;
+      color: #fff;
+      transform: scale(1.05);
+      outline: none;
+      box-shadow: 0 8px 20px rgba(200, 162, 248, 0.7);
+    }
+
+    @media (max-width: 520px) {
+      .lovable-hero {
+        padding: 2rem 1rem;
+        max-width: 90vw;
+      }
+      .lovable-hero h1 {
+        font-size: 2.2rem;
+      }
+      .lovable-hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="lovable-hero" role="banner" aria-label="Présentation personnelle de Jebbar Asmaa">
+    <h1>Jebbar Asmaa</h1>
+    <p>Développeuse frontend passionnée. Je transforme des maquettes en interfaces fluides, modernes et accessibles. Mon but ? Offrir une expérience utilisateur remarquable à travers un code propre et créatif.</p>
+    <button class="lovable-button" onclick="alert('Voici mes projets !')" aria-label="Afficher mes projets">Afficher mes projets</button>
+  </section>
+</body>
+</html>
